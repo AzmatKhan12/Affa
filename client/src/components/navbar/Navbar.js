@@ -4,23 +4,23 @@ import {  Link } from "react-router-dom"
 const Navbar = () => {
   return (
     <>
-    <nav class="navbar navbar-expand-lg bg-primary ">
-      <div class="container-md me-md-5 ">
-        <a class="navbar-brand" href='#' > AFFA Enterprises</a>
+    <nav className="navbar navbar-expand-lg bg-primary ">
+      <div className="container-md me-md-5 ">
+        <a className="navbar-brand" href='#' > AFFA Enterprises</a>
        
-        <div class="collapse navbar-collapse " id="navbarNav">
-          <ul class="navbar-nav ">
-            <li class="nav-item me-md-5">
-              <Link class="nav-link active"  to="/">Home</Link>
+        <div className="collapse navbar-collapse " id="navbarNav">
+          <ul className="navbar-nav ">
+            <li className="nav-item me-md-5">
+              <Link className="nav-link active"  to="/">Home</Link>
             </li>
-            <li class="nav-item me-md-5">
-              <Link class="nav-link" to="/aboutUs">About-Us</Link>
+            <li className="nav-item me-md-5">
+              <Link className="nav-link" to="/aboutUs">About-Us</Link>
             </li>
-            <li class="nav-item me-md-5">
-              <Link class="nav-link" to="/contactUs">Contact-Us</Link>
+            <li className="nav-item me-md-5">
+              <Link className="nav-link" to="/contactUs">Contact-Us</Link>
             </li>
-            <li class="nav-item me-md-5 ">
-              <Link class="nav-link" to="/Login">LogIn</Link>
+            <li className="nav-item me-md-5 ">
+              <Link className="nav-link" to="/Login">LogIn</Link>
             </li>
           </ul>
         </div>

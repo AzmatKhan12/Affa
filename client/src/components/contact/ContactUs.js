@@ -1,39 +1,53 @@
 import React from "react";
 import Navbar from "../navbar/Navbar";
+import axios from 'axios';
 
 const ContactUs = () => {
+
+  const URL = "https://my-first-backend-dn66.onrender.com/users";
+
+  async function getUser() {
+    console.log("first console")
+    try {
+      const response = await axios.get(URL);
+      console.log(response);
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
   return (
     <div>
       <Navbar/>
       <form>
-        <div class="mb-3">
-          <label class="form-label">Name</label>
+        <div className="mb-3">
+          <label className="form-label">Name</label>
           <input
             type="text"
-            class="form-control"
+            className="form-control"
             id="exampleFormControlInput1"
             placeholder="Jhonson"
           />
         </div>
-        <div class="mb-3">
-          <label class="form-label">Phone Number</label>
+        <div className="mb-3">
+          <label className="form-label">Phone Number</label>
           <input
             type="text"
-            class="form-control"
+            className="form-control"
             id="exampleFormControlInput1"
             placeholder="123456789"
           />
         </div>
-        <div class="mb-3">
-          <label class="form-label">Email address</label>
+        <div className="mb-3">
+          <label className="form-label">Email address</label>
           <input
             type="email"
-            class="form-control"
+            className="form-control"
             id="exampleFormControlInput1"
             placeholder="name@example.com"
           />
         </div>
-        <div class="mb-3">
+        <div className="mb-3">
           <label for="exampleFormControlTextarea1" class="form-label">
             Example textarea
           </label>
